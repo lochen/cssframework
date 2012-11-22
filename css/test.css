@@ -1,4 +1,248 @@
 /* test.css */
-.proccessbar{
+/*
+.nav.nav-list{border:0px solid #CCC;float:none;}
+.nav.nav-list li{float:none;background:none;color:#000;padding:0;line-height:20px;}
+.nav.nav-list li:hover{background:#none;}
+.nav.nav-list li:hover a{color:#FFF;background:#8FBCDB;}
+.nav.nav-list li.active{background:#789cc9;}
+.nav.nav-list li.header{color:#CCC;border:none;font-weight:bold;}
+.nav.nav-list li.header:hover{background:none;}
+.nav.nav-list li a{color:#000;padding:5px;}
+.nav.nav-list li.line{height: 1px;
+margin: 0px 10px;
+overflow: hidden;
+background-color: #E5E5E5;
+border-bottom: 1px solid white;
+padding:0;}
+
+.nav.nav-list {
+		display:none;
+		position: relative;
+		z-index: 597;
+		float: none;
+	}	
+	.nav.nav-list li {
+		position: relative;
+		float: none;
+		line-height: 1.3em;
+		vertical-align: middle;
+		zoom: 1;
+	}	
+	.nav.nav-list li:hover {
+		position: relative;
+		z-index: 599;
+		cursor: default;
+	}	
+	.nav.nav-list ul {
+		visibility: visible;
+		position: relative;
+		top: none;
+		left: none;
+		z-index: 598;
+		width: 100%;
+		margin-top: 5px;
+	}	
+	.nav.nav-list ul li {
+		float: none;
+	}
+	.nav.nav-list ul li:last-child{
+		padding-bottom:0px;
+	}	
+	.nav.nav-list ul ul {
+		position: relative;
+		top: none;
+		left: 0;
+		left: none;
+		margin-top: 5px;
+	}	
+	.nav.nav-list li:hover > ul {
+		visibility: visible;
+	}	
+	.nav.nav-list ul  li{background:#FF0000;}*/
+	
+.nav-list{border:1px solid #CCC;padding:5px;}
+.nav-list li{line-height:20px;
+padding: 4px 6px;}
+.nav-list li a{
+	padding: 2px 10px;
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	display:block;
+}
+.nav-list li.line{height: 1px;
+margin: 0px 2px;
+overflow: hidden;
+background-color: #E5E5E5;
+border-bottom: 1px solid white;
+padding:0;}
+
+/*
+.nav-list li:hover{background:#8FBCDB; color:#FFF;}
+.nav-list li:hover a{color:#FFF;text-decoration:none;}
+*/
+.nav-list li a:hover{background:#8FBCDB;color:#FFF;text-decoration:none;}
+/*.nav-list li.d:hover{background-color:#FFF;}*/
+.nav-list li.title{color:#999;font-weight:bold;}
+.nav-list ul{margin-left:15px;}
+
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress .bar {
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #70b9ce;
+}
+.progress .bar.w10{width:10%;}
+.progress .bar.w20{width:20%;}
+.progress .bar.w30{width:30%;}
+.progress .bar.w40{width:40%;}
+.progress .bar.w50{width:50%;}
+.progress .bar.w60{width:60%;}
+.progress .bar.w70{width:70%;}
+.progress .bar.w80{width:80%;}
+.progress .bar.w90{width:90%;}
+.progress .bar.w100{width:100%;}
+
+.progress.striped .bar {
+  background-color: #149bdf;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+     -moz-background-size: 40px 40px;
+       -o-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+
+.progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+.progress .bar.warning{background-color:#e79200;}
+.progress .bar.success{background-color:#6ec621;}
+.progress .bar.error{background-color:#EE5F5B;}
+.progress .bar.dark{background-color:#333333;}
+
+.accordion li .header{cursor:pointer;padding:10px; line-height:20px;border-width:0px 1px 1px 1px;border-style:solid;border-color:#CCC; margin:0;}
+.accordion li .body{padding:10px;border-width:0px 1px 1px 1px;border-style:solid;border-color:#CCC; margin:0;display:none;}
+.accordion li.active .body{display:block}
+.accordion li.active .header{border-bottom:1px solid #789cc9;}
+.accordion li:first-child .header{
+border-top:1px solid #CCC;
+}
+.accordion li:first-child .header{
+	-webkit-border-top-left-radius: 4px;
+		  border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-right-radius: 4px;
+		  border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+.accordion li:last-child .header{
+	-webkit-border-bottom-left-radius: 4px;
+		  border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+		  border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+}
+.accordion li .header .arrow{
+	
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid #000000;
+	border-left: 4px solid transparent;
+	content: "";
+	float:right;
+	margin-top:6px;
+	margin-right:5px;
+	}
+	
+.accordion li .header .arrow.down{
+	border-top: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
 
 }
+
+.gallery .item{text-align:center; border:1px solid #CCC; padding:5px; margin-bottom:10px;}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+<title>Style - Simple CSS Framework</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/test.css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/test.js"></script>
+	
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container_12">
+	<div class="grid_6">
+		<div class="box w200">
+			<ul class="nav-list">
+				<li class="title">ITEM 0</li>
+				<li>ITEM 1</li>
+				<li class="active">ITEM 2</li>
+				<li>ITEM 3</li>
+				<li>ITEM 4</li>
+				<li class="line"></li>
+				<li>ITEM 5</li>
+				<li>ITEM 6</li>
+				<li>ITEM 7</li>
+				<li>ITEM 8</li>
+				<li class="active">ITEM 9</li>
+				<li>ITEM 10</li>
+				<li><a href="http://www.google.com">Google</a></li>
+				<li><a href="http://www.apple.com">Apple</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="grid_6">
+		<div class="box w200">
+			<ul class="nav-list">
+				<li class="title">ITEM 0</li>
+				<li>ITEM 1</li>
+				<li class="d">ITEM 2
+					<ul>
+						<li><a>ITEM 2-1</a></li>
+						<li><a href="http://www.apple.com">Apple</a></li>
+					</ul>
+				</li>
+				<li>ITEM 3</li>
+				<li>ITEM 4</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="grid_6">
+		<div class="box">
+			<div class="progress">
+				<div class="bar w30"></div>
+			</div>
+			<div class="progress">
+				<div class="bar warning w30"></div>
+			</div>
+			<div class="progress">
+				<div class="bar success w30"></div>
+			</div>
+			<div class="progress">
+				<div class="bar error w30"></div>
+			</div>
+			<div class="progress">
+				<div class="bar dark w30"></div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="progress striped active">
+				<div class="bar w50"></div>
+			</div>
+			<div class="progress striped active">
+				<div class="bar warning w60"></div>
+			</div>
+			<div class="progress striped active">
+				<div class="bar success w70"></div>
+			</div>
+			<div class="progress striped active">
+				<div class="bar error w80"></div>
+			</div>
+			<div class="progress striped active">
+				<div class="bar dark w90"></div>
+			</div>
+		</div>
+	</div>
+	<div class="grid_6"></div>
+	<div class="clear"></div>
+	<div class="grid_12">
+		<div class="box">
+				<ul class="accordion">
+					<li>
+					<div class="header">accordion 1<div class="arrow"></div></div>
+					<div class="body">
+						<p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+					</li>
+				<li class="active">
+				<div class="header">accordion 2<div class="arrow down"></div></div>
+				<div class="body">
+					<p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				</li>
+				<li>
+				<div class="header">accordion 3<div class="arrow"></div></div>
+				<div class="body">
+					<p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				</li>
+				</ul>
+		</div>
+	</div>
+	
+	
+	<div class="grid_12">
+		<div class="state info">Gallery</div>
+	</div>
+	<div class="gallery" style="background:#fff;">
+		<div class="grid_4">
+			<div class="item">
+			<img src="http://placehold.it/280x200">
+			</div>
+		</div>
+		<div class="grid_4">
+			<div class="item"><img src="http://placehold.it/280x200"></div>
+		</div><div class="grid_4">
+			<div class="item">
+			<img src="http://placehold.it/280x200">
+			</div>
+		</div><div class="grid_4">
+			<div class="item">
+			<img src="http://placehold.it/280x200">
+			</div>
+		</div>
+	</div>
+	
+	<div class="grid_12">
+		<div class="box h300"></div>
+	</div>
+</div>
+</body>
+</html>
