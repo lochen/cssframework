@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+<title>Grid - Simple CSS Framework</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/fluid.css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+	
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+.container_12{background:#FF0;}
+.container_fluid{background-color:#FAF;}
+</style>
+</head>
+<body>
+<div class="container_12">
+	<div class="gird_12">
+	<div class="header">
+		<a href="index.html" class="float-right btn">Home</a>
+		<h3>Simple CSS Framework - Grid Demo</h3>
+	</div>
+	</div>
+</div><!-- container_12 -->
+
+<div class="container_12">
+	<div class="grid_12"><h3>Grid layout Example</h3></div>
+	<div class="clear"></div>
+	<div class="grid-demo mt10 mb10">
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_4">grid_4</div>
+		<div class="grid_4">grid_4</div>
+		<div class="grid_4">grid_4</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_9">grid_9</div>
+		<div class="grid_3">grid_3</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_2">grid_2</div>
+		<div class="grid_10">grid_10</div>
+		<div class="clear"></div>
+	</div><!-- grid-demo -->
+	
+	
+	<div class="grid_12"><h3>Sidebar layout</h3></div>
+	<div class="clear"></div>
+	<div class="grid-wrap mt10 mb10">
+		<div class="grid_12">
+			<div class="state h100">Header</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_8">
+			<div class="state h300">Body</div>
+		</div>
+		<div class="grid_4">
+			<div class="state h300">Sidebar</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			<div class="state h100">footer</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	
+	<div class="grid_12"><h3>Mixed layout</h3></div>
+	<div class="clear"></div>
+	<div class="grid-wrap mt10 mb10">
+		<div class="grid_12">
+			<div class="state h100">Header</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_8">
+			<div class="state h300">Body</div>
+		</div>
+		<div class="grid_4">
+			<div class="state h300">Sidebar</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_3">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_9">
+			<div class="state h200">box</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div class="grid_4">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_4">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_4">
+			<div class="state h200">box</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_8">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_4">
+			<div class="state h200">box</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_1">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_11">
+			<div class="state h200">box</div>
+		</div>
+		<div class="clear"></div>		
+		
+		<div class="grid_10">
+			<div class="state h200">box</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h200">box</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			<div class="state info">
+			<div class="container_fluid">
+			<div class="grid_3"><div class="state h100">grid_3</div></div>
+			<div class="grid_9"><div class="state h100">grid_9</div></div>
+			<div class="clear"></div>
+			</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			<div class="state h100">footer</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="grid_12"><h3>Gallery layout</h3></div>
+	<div class="clear"></div>
+	<div class="state info">container_12</div>
+	<div class="grid-wrap mt10 mb10">
+		<div class="grid_12">
+			<div class="state h100">Header</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="grid_2">
+			<div class="state h100">Photo</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Sidebar</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="grid_3">
+			<div class="state h200">Photo</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			<div class="state h100">footer</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div><!-- container_12 -->
+	
+	<div class="container_12">
+		<div class="grid_12"><h3>Fluid grid</h3></div>
+		<div class="clear"></div>
+		<div class="state info">container_fluid</div>
+		<div class="container_fluid">
+			<div class="grid_11"><div class="state h100">grid_11</div></div>
+			<div class="grid_1"><div class="state h100">grid_1</div></div>
+			<div class="clear"></div>
+			<div class="grid_3"><div class="state h100">grid_3</div></div>
+			<div class="grid_6"><div class="state h100">grid_6</div></div>
+			<div class="grid_3"><div class="state h100">grid_3</div></div>
+			<div class="clear"></div>
+			<div class="grid_4"><div class="state h100">grid_4</div></div>
+			<div class="grid_4"><div class="state h100">grid_4</div></div>
+			<div class="grid_4"><div class="state h100">grid_4</div></div>
+			<div class="clear"></div>	
+			<div class="grid_6 push_6"><div class="state h100">grid_6 push_6</div></div>
+			<div class="clear"></div>	
+			<div class="grid_6"><div class="state h100">grid_6</div></div>
+			<div class="clear"></div>	
+			<div class="grid_2"><div class="state h100">grid_2</div></div>
+			<div class="grid_10"><div class="state h500">grid_10</div></div>
+			<div class="clear"></div>			
+			<div class="grid_10"><div class="state h300">grid_10</div></div>
+			<div class="grid_2"><div class="state h200">grid_2</div></div>
+			<div class="clear"></div>	
+			<div class="grid_12"><div class="state h100">grid_12</div></div>
+			<div class="clear"></div>	
+		</div>
+	</div><!-- container_12 -->
+<div class="container_12">
+	<div class="grid_12">
+		<div class="footer">
+			CSS Framework(Responsive)
+		</div>	
+	</div><!-- grid_12 -->
+</div><!--container_12 -->
+</body>
+</html>

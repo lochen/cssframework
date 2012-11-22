@@ -1,0 +1,46 @@
+/**html .tabs li a { 
+    border-color: #FFFFFF;
+    filter: chroma(color=#FFFFFF);
+}*/
+/*
+* html {
+overflow: hidden;
+}
+* html body,
+* html #wrapper {
+position:relative;
+width:100%;
+height:100%;
+overflow:auto;
+}
+* html #fixed {
+position:absolute;
+}
+*/
+.tabs li a {border:1px solid #FFF;}
+/*
+.tabs li.active a{border-bottom:1px solid #FFF;bottom:-1px; position:relative;}
+*/
+.tabs.line{
+border-color: #FFF #FFF #ddd #FFF;
+}
+/*
+background:#000;
+content: "X";
+}*/
+
+.caret{
+border:none;margin:0;padding:0;
+}
+.btn .caret {
+	padding:0;
+	margin: 0px;
+	padding-left: 1px;
+	background: url(images/caret.gif) center no-repeat;
+	width: 7px;
+}
+.btn .caret.up{background:url(images/caret_up.gif) center no-repeat;;}
+.btn .caret.left{background:url(images/caret_left.gif) center no-repeat;;}
+.btn .caret.right{background:url(images/caret_right.gif) center no-repeat;}
+
+.btn-group .btn.split{padding:6px 4px 5px 2px; }

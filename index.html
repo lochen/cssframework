@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+<title>Simple CSS Framework</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+	
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container_12">
+	<div class="gird_12">
+	<div class="header">
+		<h3>Simple CSS Framework</h3>
+	</div>
+	</div>
+	<div class="grid_6">
+	<h3>
+	  What is this?
+	</h3>
+	<p>
+		It's a front-end css framwork for different browser, resolution, devices.
+	</p>
+	  <h3>Feature</h3>
+	  <ul class="list">
+		  <li>HTML5</li>
+		  <li>Browser support: Chrome 10+, Firefox 10+, Safari 5+, Opera 10+, IE6+</li>
+		  <li>Browser device: Android, IOS, PC</li>
+		  <li>Responsive grid <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="cursor-help">What is responsive design?</a> <a href="responsive.html" target="_blank">Try</a></li>
+		  <li>Grid layout (960) <a href="grid.html">Try</a></li>
+		  <li>Form, UI styling <a href="style.html">Try</a></li>
+		  <li>Icon <a href="icon.html">Try</a></li>
+		  <li>Required jQuery</li>
+	  </ul>
+	</div>
+	<div class="grid_6">
+	<div class="text-center"><img src="images/responsive-device.png" width="250"></div>
+	</div>
+
+	<hr class="grid_12">
+	<div class="grid_7">
+		<h3>Css file</h3>
+		<table class="table table-border">
+			<tr><td>reset.css</td><td>Reset browser css style</td></tr>
+			<tr><td>grid.css</td><td>Grid css<label class="label ml10">(Default 960 width)</label></td></tr>
+			<tr><td>common.css</td><td>Basic css & ui style</td></tr>
+			<tr><td>icon.css</td><td>Icons css</td></tr>
+			<tr><td>responsive.css</td><td>Responsive css for different resolution</td></tr>
+			<tr><td>site.css</td><td>Combined all css</td></tr>
+		</table> 
+		<h3>Js file</h3>
+		<table class="table table-border">
+			<tr><td>ui.js</td><td>UI javascript</td></tr>
+		</table>
+		<h3>Download</h3>
+		<div class="state">
+			<a href="download/stable.zip" class="btn info">Stable version</a>
+			<a href="#" class="btn warning">Develop version</a>
+			<a href="" class="btn">Source from github</a>
+		</div>
+		<h3>License</h3>
+		<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>
+	</div>
+	<div class="grid_5">
+		<h3>Supported devices</h3>
+		<table class="table table-border">
+		  <thead>
+			  <tr>
+				  <td>
+					  Name
+				  </td>
+				  <td>
+					  Screen Width
+				  </td>
+			  </tr>
+		  </thead>
+		  <tbody>
+			  <tr>
+				  <td>
+					  <a href="assets/css/mobile.css">mobile</a>
+				  </td>
+				  <td>
+					  below 760px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/720.css">720</a>
+				  </td>
+				  <td>
+					  760px to 980px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/960.css">960</a>
+				  </td>
+				  <td>
+					  980px to 1280px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/1200.css">1200</a>
+				  </td>
+				  <td>
+					  1280px to 1600px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/1560.css">1560</a>
+				  </td>
+				  <td>
+					  1600 to 1940px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/1920.css">1920</a>
+				  </td>
+				  <td>
+					  1940px to 2540px
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  <a href="assets/css/2520.css">2520</a>
+				  </td>
+				  <td>
+					  above 2540px
+				  </td>
+			  </tr>
+		  </tbody>
+		</table>
+		<div class="state info mt10"><a href="http://adapt.960.gs/">Adaptive css</a></div>
+	</div>
+	<div class="clear"></div>
+	<hr class="grid_12" />
+	<div class="grid_12">
+	<h3>How to use responsive</h3>
+	<p>Add meta and stylesheet within <span class="label error">&lt;head&gt;</span></p>
+	<div class="state">
+		<div>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
+		<div>&lt;link href="responsive.css" rel="stylesheet"&gt;</div>
+	</div>
+	</div>
+  
+  <div class="grid_12">
+	<h3>Components</h3>
+	<div class="box">
+		<ul class="">
+			<li>
+				<label class="label dark">Grid</label>
+				<p>Grid layout for different box combination</p>
+			</li>
+			<li>
+				<label class="label dark">Typography</label>
+				<p>New style for typography</p>
+			</li>
+			<li>
+				<label class="label dark">Form</label>
+				<p>New style for form using, search form, inline form</p>
+			</li>
+			<li>
+				<label class="label dark">Button</label>
+				<p>HTML5 style UI button, button group, split button</p>
+			</li>
+			<li>
+				<label class="label dark">UI elements</label>
+				<p>Such as state, box, label, pagination, breadcrumbs</p>
+			</li>
+			<li>
+				<label class="label dark">Tab</label>
+				<p>Tab for separating content</p>
+			</li>
+			<li>
+				<label class="label dark">Navigation</label>
+				<p>3 level navigation menu</p>
+			</li>
+		</ul>
+		
+	</div>
+  </div>
+	<div class="clear"></div>
+	<div class="grid_12"><h3>Grid layout</h3>
+	<span class="label">Example</span>
+	<span class="label info float-right"><a href="grid.html" target="blank">More</a></span>
+	</div>
+	<div class="clear"></div>
+	<div class="grid-demo mt10 mb10">
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="grid_1">grid_1</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_4">grid_4</div>
+		<div class="grid_4">grid_4</div>
+		<div class="grid_4">grid_4</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_9">grid_9</div>
+		<div class="grid_3">grid_3</div>
+		<div class="clear"></div>
+		<hr />
+		<div class="grid_2">grid_2</div>
+		<div class="grid_10">grid_10</div>
+		<div class="clear"></div>
+	</div><!-- grid-demo -->
+	
+	<hr class="grid_12" />
+	<div class="grid_12">
+		<div class="state error">Resize the browser screen to test responsive css</div>
+		<div class="box responsive-demo">
+			<p>This page have a custom style width different resolution</p>
+			<table class="table table-border">				
+				<tr><td class="title">mobile</td><td><span style="background-color:#287ACC; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">720</td><td><span style="background-color:#EFEFEF; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">960</td><td><span style="background-color:#EFEFEF; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">1200</td><td><span style="background-color:#ED7215; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">1600</td><td><span style="background-color:#168722; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">1920</td><td><span style="background-color:#C5A568; width:150px;">&nbsp;</span></td></td>
+				<tr><td class="title">2520</td><td><span style="background-color:#978E9B; width:150px;">&nbsp;</span></td>
+			</table>
+		</div>
+	</div>
+	<div class="grid_4">
+		<p>
+		<small>
+		Licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> and <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a>.
+		</small>
+		</p>
+	</div>
+	<div class="grid_4 text-center">
+		<p>
+		<small>
+		Grid css by <a href="http://960.gs" target="_blank">960.gs</a>
+		</small>
+		</p>
+	</div>
+	<div class="grid_4 text-right">
+		<p>
+		<small>
+		Author: ks1227@gmail.com
+		</small>
+		</p>
+	</div>
+</div><!-- container_12 -->
+
+<div class="container_12">
+	<div class="grid_12">
+		<div style="height:300px;"></div>
+	</div>
+</div>
+
+
+<div class="container_12">
+	<div class="gird_12">
+		<h1>Style Test</h1>
+	</div><!-- grid_12 -->
+	
+	<div class="grid_3">
+		<div class="box">
+			Empty box
+		</div>
+	</div><!-- grid_3 -->
+	<div class="grid_9">
+	<!--Table-->
+	<h3 class="title">Table</h3>
+	<div class="box">
+		<table class="table">
+		<div class="state notice">.table</div>
+			<tr><th>Head 1</th><th>Head 2</th><th> Head 3</th></tr>
+			<tr><td>Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+		</table>
+	</div>
+	
+	<div class="box">
+		<table class="table table-border">
+		<div class="state notice">.table .table-border</div>
+			<tr><th><input type="checkbox"></th><th>Head 1</th><th>Head 2</th><th> Head 3</th></tr>
+			<tr><td><input type="checkbox"></td><td>Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+		</table>
+	</div>
+	
+	<div class="box">
+		<div class="state notice">.table .table-border .table-hover, hover background</div>
+		<table class="table table-border table-hover">
+			<tr><th>Head 1</th><th>Head 2</th><th> Head 3</th></tr>
+			<tr><td>Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+		</table>
+	</div>
+	
+	<div class="box">
+		<div class="state notice">.table .table-border .table-hover, thead tfoot no hover background</div>
+		<table class="table table-border table-hover">
+			<thead>
+			<tr><th>Head 1</th><th>Head 2</th><th> Head 3</th></tr>
+			</thead>
+			<tr><td>Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+			<tfoot>
+			<tr><td>Foot 1</td><td>Foot 2</td><td> Foot 3</td></tr>
+			</tfoot>
+		</table>
+	</div>
+	
+	<div class="box">
+		<div class="state notice">.table td.title</div>
+		<table class="table table-border table-hover">
+			<tr><td class="title">Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+			<tr><td class="title">Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+			<tr><td class="title">Row 1</td><td>Row 2</td><td> Row 3</td></tr>
+		</table>
+	</div>
+	
+	<!--Alert-->
+	<h3 class="title">Alert</h3>
+	<div class="box">
+		<div class="state">.state</div>
+		<div class="state info">.state.info</div>
+		<div class="state error">.state.error</div>
+		<div class="state success">.state.success</div>
+		<div class="state warning">.state.warning</div>
+	</div>
+	
+	<!--Typography-->
+	<h3 class="title">Typography</h3>
+	<div class="box">
+		<div class="state">h6 - h1</div>
+		<h6>heading 6</h6>
+		<h5>heading 5</h5>
+		<h4>heading 4</h4>
+		<h3>heading 3</h3>
+		<h2>heading 2</h2>
+		<h1>heading 1</h1>
+	</div>
+	
+	<div class="box">
+		<div class="state">pre</div>
+		<pre>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre>
+		<br />
+		<div class="state">p</div>
+		<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	
+	<div class="box">
+		<div class="state">ul.list, ol.list</div>
+		<ul class="list">
+			<li>item 1</li>
+			<li>item 2
+				<ul>
+					<li>sub item 2-1</li>
+				</ul>
+			</li>
+			<li>item 3</li>
+			<li>item 4</li>
+			<li>item 5</li>
+		</ul>
+		<ol class="list">
+			<li>item 1</li>
+			<li>item 2
+				<ol>
+					<li>sub item 2-1</li>
+				</ol>
+			</li>
+			<li>item 3</li>
+			<li>item 4</li>
+			<li>item 5</li>
+		</ol>
+		
+		<div class="state">ul.list.nostyle</div>
+		<ul class="list nostyle">
+			<li>item 1</li>
+			<li>item 2
+				<ul>
+					<li>sub item 2-1</li>
+				</ul>
+			</li>
+			<li>item 3
+				<ul>
+					<li>sub item 3-1
+						<ul>
+							<li>sub item 3-1-1</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>item 4</li>
+			<li>item 5</li>
+		</ul>
+	</div>
+	</div><!-- grid_9 -->
+		
+	<div class="grid_12">
+		<!--Form-->
+		<h3 class="title">Form</h3>
+		<div class="box">		
+			<div class="mb20">	
+				<form>
+					<fieldset>
+						<legend>Legend</legend>
+					<label>Label name</label>
+					<input type="text" placeholder="Type something…">
+					<span class="help-block">Example block-level help text here.</span>
+					<label class="checkbox">
+						<input type="checkbox">Check me out
+					</label>
+					<button type="submit" class="btn">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="mb20">
+				<form class="form-inline border p10">
+					<div class="panel"><label>name</label><input type="text" name="name"></div>
+					<div class="panel"><label class="tright">email</label><input type="text" name="email"></div>
+					<div class="panel normal">
+						<div class="mb5"><label><input type="checkbox" id="remember">Remember</label></div>
+						<input type="submit" value="submit" class="btn">
+					</div>
+				</form>
+			</div>
+			
+			<div class="mb20">
+				<form class="form-inline-search">
+					<input type="text" class="input-large"><input type="submit" value="Search" class="btn search">
+				</form>
+			</div>
+			
+			<div class="mb20">
+				<table class="table table-border">
+					<tr><td><input type="text" value="input-mini" class="input-mini"></td></tr>
+					<tr><td><input type="text" value="input-small" class="input-small"></td></tr>
+					<tr><td><input type="text" value="input-medium" class="input-medium"></td></tr>
+					<tr><td><input type="text" value="input-large" class="input-large"></td></tr>
+					<tr><td><input type="text" value="input-xlarge" class="input-xlarge"></td></tr>
+					<tr><td><input type="text" value="input-xxlarge" class="input-xxlarge"></td></tr>
+					<tr><td><input type="text" value="100%" style="width:100%;"></td></tr>
+				</table>
+			</div>
+			
+			<div class="mb20">
+				<label class="inline"><input type="checkbox" value="option1">1</label>
+				<label class="inline"><input type="checkbox" value="option2">2</label>
+				<label class="inline"><input type="checkbox" value="option3">3</label>
+			</div>
+			<div class="mb20">
+				<label class="block"><input type="radio" value="option1">Option one is this and that—be sure to include why it's great</label>
+				<label class="block"><input type="radio" value="option2">Option one is this and that—be sure to include why it's great</label>
+				<label class="block"><input type="radio" value="option3">Option one is this and that—be sure to include why it's great</label>
+				<input type="radio" name="choice" value="A">A <input type="radio" name="choice">B
+				<br />
+				<input type="radio" name="choice" value="A">是 <input type="radio" name="choice">否
+				
+			</div>
+			<div class="mb20">
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<select multiple="multiple">
+					<option value="1">multiple 1</option>
+					<option value="2">multiple 2</option>
+					<option value="3">multiple 3</option>
+					<option value="4">multiple 4</option>
+					<option value="5">multiple 5</option>
+				</select>
+			</div>
+			
+			<div class="mb20">
+				<input type="file"><input type="submit" value="Upload" class="btn">
+			</div>
+			
+			<div class="mb20">
+				<div class="state">.btn-input-file re-style input file</div>
+				<div>&lt;span class="btn btn-input-file"&gt;
+					&lt;span&gt;選擇檔案&lt;/span&gt;
+					&lt;input type="file" id="file" name="file"&gt;
+				&lt;/span&gt;</div>
+				<br />
+				<span class="btn btn-input-file">
+					<span>選擇檔案</span>
+					<input type="file" id="file" name="file">
+				</span>
+			</div>
+		</div><!-- box -->
+		
+		<div class="box">
+			<div class="mb20">
+				<input type="text" class="error" value=".error">
+				<input type="text" class="success" value=".success">
+				<input type="text" class="warning" value=".warning">
+				<input type="text" class="info" value=".info">
+			</div>
+			<div class="mb20">
+				<input type="text" disabled="true">
+			</div>
+			<div class="mb20">
+				<input type="text"><span class="inline">help inline text</span>
+			</div>
+			<div class="mb20">
+				<input type="text"><span class="block">help block text</span>
+			</div>
+		</div><!-- box -->
+		
+		<!--button-->
+		<h3 class="title">Button</h3>
+		<div class="box">
+			<div class="state">.btn</div>				
+			<button class="btn">.btn</button>
+			<button class="btn info">.btn.info</button>
+			<button class="btn success">.btn.success</button>
+			<button class="btn error">.btn.error</button>
+			<button class="btn warning">.btn.warning</button>
+			<button class="btn dark">.btn.dark</button>
+			<br /><br />
+			<button class="btn small">.btn.small</button>
+			<button class="btn info large">.btn.large</button>
+			<a class="btn info">a.btn</a>
+			<button class="btn success">.btn</button>
+			<button class="btn disabled" disabled="true">disabled</button>
+			<button class="btn success disabled" disabled="true">disabled</button>			
+		</div><!-- box -->
+		
+		<div class="box">
+			<div class="state">.caret</div>
+			<a class="btn info">a.btn<span class="caret"></span></a>
+			<a class="btn success small">a.btn<span class="caret"></span></a>
+			<a class="btn error large">a.btn<span class="caret"></span></a>
+			<button class="btn">.btn<span class="caret"></span></button>
+			<button class="btn success small">.btn<span class="caret"></span></button>
+			<br /><br />
+			<div class="state">.btn-group</div>
+			<div class="btn-group">
+				<button class="btn">.btn .caret</button>
+				<button class="btn split"><span class="caret"></span></button>
+			</div>
+			<div class="btn-group">
+				<button class="btn split"><span class="caret up"></span></button>
+				<button class="btn">.btn caret up</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn split"><span class="caret left"></span></button>
+				<button class="btn">.btn caret left</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn">.btn caret right</button>
+				<button class="btn split"><span class="caret right"></span></button>
+			</div>
+			<br />
+			<div class="btn-group">
+				<button class="btn">.btn</button>
+				<button class="btn">.btn</button>
+				<button class="btn">.btn</button>
+				<button class="btn">.btn</button>
+				<button class="btn split"><span class="caret"></span></button>
+			</div>
+			<br />
+			<div class="state">.btn-bar</div>
+			<div class="btn-bar">
+				<div class="btn-group">
+					<button class="btn">.btn</button>
+					<button class="btn split"><span class="caret"></span></button>
+				</div>
+				<div class="btn-group">
+					<button class="btn">.btn</button>
+					<button class="btn split"><span class="caret"></span></button>
+				</div>	
+				<div class="btn-group">			
+					<button class="btn success">.btn.success</button>
+					<button class="btn error">.btn.error</button>
+				</div>
+			</div>
+		</div><!-- box -->
+		
+		<!--tab-->
+		<h3 class="title">Tab / Breadcrumbs</h3>			
+		<div class="box">
+			<div class="required">Required ui.js</div>
+			<div class="state">Tab</div>
+			<ul class="tabs">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+			
+			<div class="state">No-js .lock</div>
+			<ul class="tabs line lock">
+				<li><a href="#home">Home</a></li>
+				<li class="active"><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+			
+			<div class="state">tabs.line.indent, switch tab when it's clicked</div>
+			<ul class="tabs line indent">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>			
+			
+			<div class="state">tabs.line.indent.hover, switch tab when it's hover</div>
+			<ul class="tabs line content hover">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li class="active"><a href="#settings">Settings</a></li>
+			</ul>
+			<div class="tabs-content text-center">
+				<div class="tabs-content-item">[1]Hover content</div>
+				<div class="tabs-content-item">[2]Hover content</div>
+				<div class="tabs-content-item">[3]Hover content</div>	
+				<div class="tabs-content-item active">[4]Hover content</div>		
+			</div>
+			
+			<div class="state">tabs.line.indent.right, tab alignment right</div>
+			<ul class="tabs right line indent">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>			
+			
+			<div class="state">tabs.line, swtich tab with content</div>
+			<ul class="tabs line content">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+			
+			<div class="tabs-content">
+				<div class="tabs-content-item active">[1]</div>
+				<div class="tabs-content-item">[2]</div>	
+			</div>				
+			
+			<div class="state">tabs.line, swtich tab with content, tab content border line</div>
+			<ul class="tabs line indent content">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+			
+			<div class="tabs-content line">
+				<div class="tabs-content-item">[1]Tabs content...</div>
+				<div class="tabs-content-item">[2]Tabs content...</div>
+				<div class="tabs-content-item active">[3]Tabs content...</div>
+			</div>
+			
+			<div class="state">Using data-target</div>
+			<ul class="tabs line indent content" data-target="#my_tabs">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#messages">Messages</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+			
+			<div style="border:1px solid #FF0000; padding:10px; margin:10px 0px;">Fixed middle content</div>
+			
+			<div id="my_tabs" class="tabs-content" style="border:1px dashed #789cc9;">
+				<div class="tabs-content-item">[1]My Tabs content...</div>
+				<div class="tabs-content-item active">[2]My Tabs content...</div>
+				<div class="tabs-content-item">[3]My Tabs content...</div>
+				<div class="tabs-content-item">[4]My Tabs content...</div>
+			</div>
+		</div><!-- box -->
+		
+		<div class="box">
+			<div class="state">Breadcrumbs</div>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a><span class="divider">&raquo;</span></li>
+				<li><a href="#">Features</a><span class="divider">&raquo;</span></li>
+				<li class="disabled"><a href="#">Disabled</a><span class="divider">&raquo;</span></li>
+				<li class="active"><a href="#">Active</a></li>
+			</ul>
+		</div><!-- box -->
+	</div><!--grid_12-->
+	
+	<div class="grid_5">
+		<h3 class="title">Dropdown / Tooltip</h3>				
+			<div class="box"><div class="required">Required jquery.qtip.js</div>
+				<div class="state">Dropdown</div>
+				
+				<div>
+				<a href="#" class="dropdown" data-target="#dd_menu">Menu</a>
+				</div>				
+				<div id="dd_menu" class="dropdown-menu has-tip">
+					<ul>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 2-1-1</a></li>
+						<li><a href="#">Item 3</a></li>
+						<li><a href="#">Item 4</a></li>
+						<li><a href="#">Item 5-5-5-5-5</a></li>
+					</ul>
+				</div>
+				
+				<br />
+				
+				<div>
+				<a href="#" class="btn dropdown" data-target="#dd_option" data-position="bottom_right_l">Option<span class="caret"></span></a>
+				</div>				
+				<div id="dd_option" class="dropdown-menu has-tip">
+					<ul>
+						<li><a href="#">Option 1</a></li>
+						<li><a href="#">Option 2-1-1</a></li>
+						<li><a href="#">Option 3</a></li>
+						<li><a href="#">Option 4</a></li>
+						<li><a href="#">Option 5-5-5-5-5</a></li>
+					</ul>
+				</div>
+				
+				<br />
+				
+				<div>
+				<a href="#" class="dropdown" data-target="#dd_c_menu" data-position="bottom_center">Menu(bottom_center)</a>
+				</div>
+				
+				<div id="dd_c_menu" class="dropdown-menu has-tip">
+					<ul>
+						<li><a href="#">Item 1C</a></li>
+						<li><a href="#">Item 2-1-1</a></li>
+						<li><a href="#">Item 3</a></li>
+						<li><a href="#">Item 4</a></li>
+						<li><a href="#">Item 5-5-5-5-5</a></li>
+					</ul>
+				</div>
+				
+				<br />
+				
+				<div>
+				<a href="#" class="dropdown" data-target="#dd_r_menu" data-position="bottom_right_l">Menu(anchor-right)</a>
+				</div>
+				<div id="dd_r_menu" class="dropdown-menu has-tip anchor-right">
+					<ul>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 2</a></li>
+						<li><a href="#">Item 3</a></li>
+						<li><a href="#">Item 4</a></li>
+						<li><a href="#">Item 5</a></li>
+					</ul>
+				</div>
+			</div>
+	</div><!-- grid_5 -->
+	<div class="grid_7">
+		<div class="box"><div class="required">Required jquery.qtip.js</div>
+			<div class="state">Tooltip</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <a href="#" title="Tooltip center" class="ttip" data-position="top_center">been</a> the industry's standard dummy text ever since the 1500s, when an unknown printer took a <a href="#" title="Galley of type" class="ttip">galley of type</a> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with <a href="#" title="Tooltip title desktop" class="ttip" data-position="top_left">desktop</a> publishing software like Aldus PageMaker <a href="#" title="Tooltip title desktop" class="ttip" data-position="bottom_right_l">including</a> versions of Lorem Ipsum.</p>
+		</div>	
+	</div><!-- grid_7 -->
+	
+	<div class="grid_9">			
+		<div id="code_nav_0" class="nav-wrap">			
+			<ul class="nav">
+				<li><a href=""><span>ITEM 1</span></a></li>
+				<li><a href=""><span class="dir">ITEM 2</span></a>
+					<ul>
+						<li><a href=""><span>ITEM 2-1</span></a></li>
+						<li><a href=""><span>ITEM 2-2</span></a></li>
+						<li><a href=""><span>ITEM 2-3</span></a></li>
+					</ul>
+				</li>
+				<li><a href=""><span>ITEM 3</span></a></li>
+				<li><a href=""><span class="dir">ITEM 4</span></a>					
+					<ul>
+						<li><a href=""><span>ITEM 4-1</span></a></li>
+						<li><a href=""><span class="dir">ITEM 4-2</span></a>							
+							<ul>
+								<li><a href=""><span>ITEM 4-2-1</span></a></li>
+								<li><a href=""><span>ITEM 4-2-2</span></a></li>
+								<li><a href=""><span>ITEM 4-2-3</span></a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>ITEM 4-3</span></a></li>
+					</ul></li>
+				<li><a href=""><span>ITEM 5</span></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="box">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div><a href="#" class="btn dark">MORE</a></div>
+		</div>
+	</div><!-- grid_9 -->
+	<div class="grid_3">
+		<h3>List</h3>
+		<div class="box">
+			<ul class="list-hover">
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+			</ul>	
+		</div>
+	</div><!-- grid_3 -->
+	
+	<div class="grid_8">
+		<!--mics-->
+		<h3 class="title">Mics</h3>		
+		<div class="box">
+			<div class="box-header">.box .box-header</div>
+			<div class="box-body">.box .box-body</div>
+			<div class="box-footer">.box .box-footer</div>			
+		</div>
+		
+		<div class="box">
+			<div class="mb20">
+				<div class="text-left">text-left</div>
+				<div class="text-center">text-center</div>
+				<div class="text-right">text-right</div>
+			</div>
+			
+			<div class="mb20 clearfix">
+				<div class="state">float left, right inside div.clearfix</div>
+				<div class="float-left border">float-left</div>
+				<div class="float-right border">float-right</div>
+			</div>
+		</div>			
+	</div><!-- grid_8 -->
+	<div class="grid_4">		
+		<div class="box">
+			<div class="state">padding, margin</div>
+			<span class="label">padding 10</span>
+			<div class="p10 border">.p10 </div>
+			<span class="label success">padding 20</span>
+			<div class="p20 border">.p20</div>
+			<span class="label error">margin 10</span>
+			<div class="m10 border">.m10</div>
+			<span class="label info">margin 20</span>
+			<div class="m10 border">.m20 </div>
+			<span class="label warning">margin-bottom 20</span>
+			<div class="mb20 border">.mb20 </div>
+			<span class="label">margin-top 20</span>
+			<div class="mt20 border">.mb20 </div>
+			<span class="label">margin-left 20</span>
+			<div class="ml20 border">.ml20 </div>
+			<span class="label dark">margin-right 20</span>
+			<div class="mr20 border">.mr20 </div>
+		</div>
+	</div><!-- grid_4 -->
+	
+	<div class="grid_3">
+		<div class="box">
+			<div class="state">close</div>
+			<div class="state error">text...<span class="close">&times;</span></div>
+			<div class="border clearfix">
+				<a class="close">&times;</a>
+			</div>
+			<button class="btn small"><span class="close">&times;</span></button>
+		</div>
+	</div><!-- grid_3 -->
+	<div class="grid_9">	
+		<div class="box">
+			<div class="state">Tags</div>
+			<div class="tags">
+				<a href="#">News</a>
+				<a href="#">Sport</a>
+				<a href="#">World</a>
+				<a href="#">Art</a>
+				<a href="#">Weather</a>
+			</div>
+		</div>
+	</div><!-- grid_9 -->
+	
+	<div class="grid_12">		
+		<div class="box">
+			<div class="state">Pagination</div>
+			<div class="pagination">
+			<span class="total">4/10</span>
+			<a href="#">&laquo;</a>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#" class="current">4</a>
+			<a href="#">5</a>
+			<a href="#">&raquo;</a>
+			</div>
+		</div>
+	</div><!-- grid_12 -->
+	
+	<div class="grid_12">
+		<div id="code_nav_1" class="nav-wrap">
+			
+			<ul class="nav">
+				<li><a href=""><span>ITEM 1</span></a></li>
+				<li><a href=""><span class="dir">ITEM 2</span></a>
+					<ul>
+						<li><a href=""><span>ITEM 2-1</span></a></li>
+						<li><a href=""><span>ITEM 2-2</span></a></li>
+						<li><a href=""><span>ITEM 2-3</span></a></li>
+					</ul>
+				</li>
+				<li><a href=""><span>ITEM 3</span></a></li>
+				<li><a href=""><span class="dir">ITEM 4</span></a>					
+					<ul>
+						<li><a href=""><span>ITEM 4-1</span></a></li>
+						<li><a href=""><span class="dir">ITEM 4-2</span></a>							
+							<ul>
+								<li><a href=""><span>ITEM 4-2-1</span></a></li>
+								<li><a href=""><span>ITEM 4-2-2</span></a></li>
+								<li><a href=""><span>ITEM 4-2-3</span></a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>ITEM 4-3</span></a></li>
+					</ul></li>
+				<li><a href=""><span>ITEM 5</span></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div><!-- grid_12 -->
+	<div class="grid_12">
+		<div class="footer">
+			CSS Framework(Responsive)
+		</div>		
+	</div>
+	</div><!--container_12 -->
+</body>
+</html>
