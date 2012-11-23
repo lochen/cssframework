@@ -116,4 +116,93 @@ $(document).ready(function(){
 	$(window).resize(function(){
 	navMinimize();	
 	});
+	
+	//qtip
+	$(".dropdown, .ttip").each(function(i,el){
+		var _target=$(el).attr('data-target');
+		var _text=(_target)?$(_target):$(el).attr('title');
+		var _classes =['ui-tooltip-shadow'];
+		var _position =  {
+				my: 'bottom left',
+				at: 'top right'
+			};
+		var _show='mouseenter';
+		var _hide='mouseleave';
+		var _offset = 10;
+		var _corner = true;
+		var _tip={ offset: _offset };
+		var _cls='ui-tooltip-tipsy';
+		//console.log($(el).attr('data-position'));
+		if($(el).hasClass('dropdown')){
+			_show='click';
+			_hide='click unfocus';
+			_cls='ui-tooltip-light';
+			$(el).click(function(){return false;});
+			_tip.mimic='center';
+			if(typeof($(el).attr('data-position'))=="undefined"){
+				//console.log('und');
+				$(el).attr('data-position','bottom_left_r');
+			}
+		}
+		
+		//console.log($(el).attr('data-position'));
+		if($(el).attr('data-position')){
+			switch($(el).attr('data-position')){
+				case "top_center":
+					_position = {my: 'bottom center',at: 'top center'};
+					_tip.offset = 0;					
+					break;
+				case "top_left":
+					_position = {my: 'bottom right',at: 'top left'};				
+					break;
+				case "top_right":
+					_position = {my: 'bottom left',at: 'top right'};				
+					break;
+				case "bottom_center":
+					_position = {my: 'top center',at: 'bottom center'};	
+					_tip.offset = 0;								
+					break;
+				case "bottom_left":
+					_position = {my: 'top right',at: 'bottom left'};				
+					break;
+				case "bottom_left_r":
+					_position = {my: 'top left',at: 'bottom left', adjust: {x: 10}};				
+					break;
+				case "bottom_right":
+					_position = {my: 'top left',at: 'bottom right'};				
+					break;
+				case "bottom_right_l":
+					_position = {my: 'top right',at: 'bottom right', adjust: {x: -10}};				
+					break;
+				case "center_left":
+					_position = {my: 'right center',at: 'left center'};	
+					_tip.offset = 0;											
+					break;
+				case "center_right":
+					_position = {my: 'left center',at: 'right center'};	
+					_tip.offset = 0;											
+					break;
+				default:
+				break;
+			}
+		}
+		
+		if($(el).attr('data-color')){
+			_classes.push($(el).attr('data-color'));
+		}
+		else{
+			_classes.push(_cls);		
+		}
+		
+		$(el).qtip({
+			content: {text: _text},
+			position: _position,
+			show: {	event: _show},
+			hide: {	event: _hide},
+			style: {
+				classes: _classes.join(' '),
+				tip: _tip
+			}
+		});
+	});
 });
