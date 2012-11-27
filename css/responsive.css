@@ -60,7 +60,7 @@
 
 /* nav */
 @media (max-width: 480px) {
-	.nav-wrap{position:relative;}
+	.nav-bar{position:relative;}
 	.nav-menu{float:none;text-align:right;display:block;margin:0;padding-top:4px;padding-right:4px;}
 	.nav-btn .caret{margin-left:0;}
 	ul.nav {
@@ -94,7 +94,7 @@
 		float: none;
 	}
 	ul.nav ul li:last-child{
-		padding-bottom:0px;
+		/*margin-bottom:0px;*/
 	}	
 	ul.nav ul ul {
 		position: relative;

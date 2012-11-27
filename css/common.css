@@ -813,6 +813,7 @@ a.btn{color:#333;}
 .tags a:hover{text-decoration:none;background-color:#2F96B4;color:#FFF;}
 
 /* Nav, nav-wrap */
+/*
 .nav-wrap{background-color:#000;margin-bottom:10px;}
 .nav:before,
 .nav-wrap:after {
@@ -823,7 +824,9 @@ a.btn{color:#333;}
 .nav-wrap:after {
 	clear: both;
 }
+*/
 /* nav default */
+/*
 ul.nav,
 ul.nav li,
 ul.nav ul {
@@ -866,8 +869,10 @@ ul.nav ul ul {
 ul.nav li:hover > ul {
 	visibility: visible;
 }
+*/
 
 /* nav style */
+/*
 ul.nav li {
 	padding: 7px 10px;
 	background: #000;
@@ -882,15 +887,18 @@ ul.nav a:link,
 ul.nav a:visited{color: #fff; text-decoration: none;}
 ul.nav a:hover{color: #fff;}
 ul.nav a:active{color: #ffa500;}
-
+*/
 /* level 1 */
+/*
 ul.nav ul {
 	width: 150px;
 }
 ul.nav ul li {
 	font-weight: normal;
 }
+*/
 /* level 2*/
+/*
 ul.nav ul li:hover{
 	background:#789cc9;
 }
@@ -900,8 +908,9 @@ ul.nav *.dir {
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
 }
-
+*/
 /* nav-rtl */
+/*
 ul.nav-right{float:right;}
 ul.nav-rtl ul {
 	left: auto;
@@ -911,8 +920,9 @@ ul.nav-rtl ul ul{
 	left: auto;
 	right: 150px;
 }
-
+*/
 /* nav-linear */
+/*
 ul.nav-linear {
 	width: 100%;
 }
@@ -931,8 +941,9 @@ ul.nav-linear li:hover {
 ul.nav-linear ul ul {
 	display: none !important;
 }
-
+*/
 /* nav-vertical */
+/*
 ul.nav-vertical {
 	width: 150px;
 }
@@ -958,7 +969,7 @@ ul.nav-vertical-rtl ul {
 ul.nav-vertical-rtl li {
 	text-align: right;
 }
-
+*/
 .nav-menu{
 	float:right;
 	margin-top:4px;
