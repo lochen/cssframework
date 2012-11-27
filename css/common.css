@@ -307,6 +307,8 @@ p.lead{padding:10px;font-size:18px; word-spacing:4px;}
 
 /*border*/
 .border{border:1px solid #CCC;}
+.border-dashed{border:1px dashed #CCC;}
+.border-dotted{border:1px dotted #CCC;}
 .close{  
 	float: right;
 	color: #000000;
@@ -498,6 +500,7 @@ input[type=checkbox]{
 .box-header{padding:5px; border-bottom:1px solid #CCC;font-weight:bold;}
 .box-body{min-height:150px; padding:5px;}
 .box-footer{padding:5px; border-top:1px solid #CCC;}
+.box.no-mini-height{min-height:none;}
 
 /* btn */
 a.btn{color:#333;}
@@ -819,8 +822,8 @@ a.btn{color:#333;}
 
 /* dropdown */
 .dropdown-menu{display:none;}
-.dropdown-menu ul li a{display:block;padding:4px 15px;}
-.dropdown-menu ul li a:hover{text-decoration:none;background-color:#2F96B4;color:#FFF;}
+.dropdown-menu ul li a{display:block;padding:6px 15px;}
+.dropdown-menu ul li a:hover{text-decoration:none;background-color:#8FBCDB;color:#FFF;}
 
 
 /* Tags */

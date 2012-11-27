@@ -46,7 +46,7 @@
 		<div class="box">
 			<ul class="nav-list">
 				<li><a href="#table">Table</a></li>
-				<li><a href="#alert">Alert</a></li>
+				<li><a href="#alert">Alert/Label</a></li>
 				<li><a href="#typography">Typography</a></li>
 				<li><a href="#form">Form</a></li>
 				<li><a href="#button">Button</a></li>
@@ -117,6 +117,17 @@
 		<div class="state warning">.state.warning</div>
 	</div>
 	
+	<!--Label-->
+	<h3 class="title"><a name="label">Label</a></h3>
+	<div class="box">
+		<ul class="nav-list">
+		<li><span class="label">.label</span></li>
+		<li><span class="label info">.label.info</span></li>
+		<li><span class="label error">.label.error</span></li>
+		<li><span class="label success">.label.success</span></li>
+		<li><span class="label warning">.label.warning</span></li>
+		</ul>
+	</div>
 	<!--Typography-->
 	<h3 class="title"><a name="typography">Typography</a></h3>
 	<div class="box">
@@ -675,7 +686,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 	</div><!-- grid_8 -->
 	<div class="grid_4">		
 		<div class="box">
-			<div class="state">padding, margin</div>
+			<div class="state">
+				<h5>Margin, Padding</h5>
+				.m10, .mt10, .mb10<br />
+				.p10, .pt10, .pb10<br />
+				support 5 - 20
+			</div>
 			<span class="label">padding 10</span>
 			<div class="p10 border">.p10 </div>
 			<span class="label success">padding 20</span>
@@ -717,7 +733,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 			</div>
 		</div>
 	</div><!-- grid_9 -->
-	
+	<div class="grid_12">
+		
+		<div class="box">
+		<div class="state">.fix-top, .fix-bottom, .fix-top-right, .fix-bottom-right</div>
+		Example: This page right bottom corner "Back to top"(IE7+)</div>
+	</div>
 	<div class="grid_12">
 		<div class="footer">
 			CSS Framework(Responsive)
