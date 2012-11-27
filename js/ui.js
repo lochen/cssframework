@@ -84,8 +84,8 @@ $.fn.nav = function() {
 }
 
 function navMinimize(){	
-	if($(window).outerWidth()<=360){
-		console.log('width<360');
+	if($(window).outerWidth()<=720){
+		console.log('width<720');
 		var btn='<div class="nav-menu"><button type="button" class="btn nav-btn"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button></div>';
 		$(".nav-bar").find('.nav-menu').remove();
 		/*if($(".nav").parents('.nav-bar').length!=0){
@@ -129,7 +129,7 @@ function navMinimize(){
 		});
 		
 		//$(btn).prependTo($(".nav-bar"));
-		
+		$(".nav").hide();
 		$(".nav-btn").click(function(){
 			$(this).parents('.nav-bar').find('.nav').slideToggle();
 		});
